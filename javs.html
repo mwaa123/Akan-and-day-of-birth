@@ -18,23 +18,29 @@
     to be able to get your akan name an origin from Ghana by first getting an upate
     on the day of birth.
 </h2></p>
-<form class="form">
-    <label for = "dom"> <hi>DAY OF MONTH</hi> </label>
-    <input type="date"id ="dombox">
-    
-<select>
-    <option value="true"onclick="MALE()"> MALE</option>
-    <option value="true"onclick="FEMALE()"> FEMALE</option>
-    
+<div>
 
-</select>    
-</form>
+<div class="form" onsubmit="return false">
 
-<script>
-    function age (){ 
-        return 
-    }
-</script>
+
+    <label> year of birth</label><br>
+    <input type="text"placeholder = "YoB" id = "Month"><br><br>
+
+    <label>month</label><br>
+    <input type="text" placeholder="mm" id = "date"><br><br>
+
+    <label>Date</label><br>
+    <input type="text"placeholder = "DoB" id ="date"><br><br>
+
+    
+<select id = "gender" name = "gender">
+    <option value="male()">male</option>
+    <option value="female()"> female</option>
+</select> 
+<input type=" submit" onclick="akanAge()"value ="submit">
+
+
+</div>
 </div>
     </body>
 </html>
