@@ -4,13 +4,19 @@
         
     
     </head>
+    <style>
+    body{
+        background-image: url(buru.jpg);
+    }
+    
+    </style>
 <body>
     <script> src="origin.js"
 </script>
 
     <h1> AN APPLICATION FORM TO KNOW YOUR AKAN NAME AND DAY OF BIRTH</h1>
     <a href="origin.html"> AKAN ORIGIN</a>
-
+<div>
 <div class="form"onsubmit ="return false">
 
 <label> year of birth</label><br>
@@ -27,10 +33,12 @@
 <option value="male"> Male</option>
 <option value="female"> Female</option>
 </select>
-<input type="submit">
-
+<input type="submit" onclick="akanAge()" value="submit">
+<p id="answer"> and your akan name is </p>
 
 
 </div>
+</div>
+
 </body>
 </html>

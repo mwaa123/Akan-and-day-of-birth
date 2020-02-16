@@ -15,10 +15,23 @@ var calculateDay=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7
 var calculateDay= Math.floor(calculateDay)
 
 
+if(MM <1||MM >12){
+    alert ("please key in the correct month");
+};
 
+if(DD>31|| DD<1){
+alert("please key in the correct day");
+};
 
+if (gender==="male"){
+    sex =male;
+}
 
-
+else {
+    sex=female;
+};
+var output =sex[calculateDay]
+document.getelementById("answer").innerHTML="CONGRATULATIONS YOUR AKAN NAME IS"+output+"."
 
 
 
