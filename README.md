@@ -17,6 +17,6 @@ Javascript
 ## Support and contact details
 Ruth Mugo ruthwanjiramugo@gmail.com
 ## Live link
-https://github.com/mwaa123
+https://mwaa123.github.io/akan-and-day-of-birth/
 ### License
 licence under the MIT License Copyright (c) 2020 RUTH MUGO
