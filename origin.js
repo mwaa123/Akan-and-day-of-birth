@@ -1,42 +1,40 @@
+var female=[" Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+
 function akanAge (){
 
-    var male=["Kwasi,Kwadwo,Kwabena,kwaku,Yaw,Kofi,Kwame"];
-    var female=[" Akosua,Adwoa,Abenaa,Akua,Yaa,Afua,Ama"];
-    var gender= document.getelementById("gender").value;
-    console.log(gender);
+
+    var gender= document.getElementById("gender").value;
+    var male=["Kwasi","Kwadwo","Kwabena","kwaku","Yaw","Kofi","Kwame"];
+
     
+var YY=parseInt(document.getElementById ("year").value);
+var MM=parseInt(document.getElementById("month").value);
+var DD=parseInt(document.getElementById("date").value);
+var CC=parseInt((YY/100)+1)
 
-var CC=parseInt (year.slice (0,2))
-var year =Document.getelementById ("Year").value;
-var YY=parseInt(year.slice(2,4))
-var MM=parseInt.Document.getelementById("Month").value;
-var DD=parseInt.Document.getelementById("Day").value;
+var  addDay=(((CC/4) - 2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7
+console.log(addDay);
 
-var male=["Kwasi,Kwadwo,Kwabena,kwaku,Yaw,Kofi,Kwame"];
-var female=[" Akosua,Adwoa,Abenaa,Akua,Yaa,Afua,Ama"];
-var gender= document.getelementById("gender").value;
-console.log(gender);
-
-
-var  addDay=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7
-var addDay= Math.floor(addDay)
+var addDay2= Math.ceil(addDay)
+console.log('this is the', male[6]);
 
 
 if(MM <1||MM >12){
     alert ("please key in the correct month");
-};
-
-if(DD>31|| DD<1){
-alert("please key in the correct day");
-};
-
-if (gender==="male"){
-    sex =male;
 }
 
-else {
-    sex=female;
-};
-var output =sex[calculateDay]
-document.getelementById("answer").innerHTML="CONGRATULATIONS YOUR AKAN NAME IS"+output+"."
-};
+else  if(DD>31|| DD<1){
+alert("please key in the correct day");
+}
+
+else  if (gender==="male"){
+    document.getElementById("answer").innerHTML=("YOUR AKAN NAME IS", male[addDay])
+}
+
+else if(gender==="female"){
+    document.getElementById("answer").innerHTML=("YOUR AKAN NAME IS"+female[addDay])
+}
+else{
+    document.getElementById("answer").innerHTML=("oops! You entered wrong data")
+}
+}
